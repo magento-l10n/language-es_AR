@@ -968,6 +968,8 @@ label,etiqueta
 "Save &amp; New","Guardar &amp; Nuevo"
 "Enable Hints for Storefront with URL Parameter","Activar sugerencias para escaparate con parámetro de URL"
 "Parameter Value","Valor del parámetro"
+"Enable Template Path Hints for Storefront","Activar els suggeriments de ruta de plantilles per aparador"
+"Enable Template Path Hints for Admin","Activar els suggeriments de ruta de plantilles per Administrador"
 "System Backup","Copia de seguridad del Sistema"
 "Database and Media Backup","Copia de seguridad de la base de datos y de los archivos multimedia"
 "Database Backup","Backup de base de datos"
@@ -2233,6 +2235,7 @@ Overview,Resumen
 "You moved the category","Se movió la categoría"
 "This product no longer exists.","Este artículo ya no existe."
 "We can't find the image file.","No se puede encontrar la imagen."
+"productFactory is already set","productFactory ya está configurado"
 "Could not save product option","No se puede guardar la opción del producto"
 "Product option with id %1 does not exist","La opción del producto con id %1 no existe"
 "Are you sure you want to delete this category?","¿Está seguro de que desea eliminar esta categoría?"
@@ -2266,6 +2269,7 @@ to,hasta
 "Maximum %1 characters","Máximo %s caracteres."
 remaining,restantes
 "too many",muchos
+"Sending attribute values as package.","Envío de valores de atributo como paquete."
 "This value does not follow the specified format (for example, 200X300).","Este valor no sigue el formato especificado (por ejemplo, 200 x 300)."
 "Applies to category pages","Aplicar a páginas de categoría"
 "Remember Category Pagination","Recordar Paginación de Categoría"
@@ -2435,7 +2439,9 @@ End,Fin
 "Entity type model must be an instance of Magento\CatalogImportExport\Model\Import\Product\Type\AbstractType","Modelo de tipo de entidad debe ser una instancia de \Magento\CatalogImportExport\Model\Export\Product\Type\AbstractType"
 "Entity type model must be an instance of '%1'","El modelo de tipo de entidad debe ser una instancia de '%1'"
 "Disallowed file type.","Tipo de archivo no aceptado."
+"Value for multiselect attribute %s contains duplicated values","El valor para el atributo multiselecto %s contiene valores duplicados"
 "Invalid Stock data for insert","Datos de valores no válidos para insertar"
+"Value for 'type' sub attribute in 'custom_options' attribute contains incorrect value, acceptable values are: %1","El valor del sub-atributo 'type' en el atributo 'custom_options' contiene un valor incorrecto, los valores aceptables son: %1"
 "Minimum Qty","Cantidad mínima"
 "Add Minimum Qty","Añadir cantidad mínima"
 "Could not rebuild index for empty products array","No podría reconstruir índice de variedad de productos de vacío"
@@ -2853,6 +2859,7 @@ of,de
 "Condition Name","Nombre de la condición"
 "Show Content as","Mostrar contenido como"
 Applied,Aplicado
+"Checkbox Text","Texto del Checkbox"
 "Content Height (css)","Contenido altura (css)"
 "Content Height","Contenido altura"
 Condition,Condición
@@ -3516,6 +3523,7 @@ Add,Agregar
 "Always (during development)","Siempre (durante el desarrollo)"
 "Only Once (version upgrade)","Solamente una vez (actualización de versión)"
 "Never (production)","Nunca (producción)"
+Bcc,CCO
 "Separate Email","Separar correo electrónico"
 "%1 (Default)","%1 (por defecto)"
 title,título
@@ -3561,6 +3569,8 @@ Specified,Especificado
 "Web Section","Sección de la web"
 "Store Email Addresses Section","Sección de direcciones de correo electrónico de tienda"
 "Email to a Friend","Escribir correo electrónico a un amigo"
+"'The specified image adapter cannot be used because of: ' .","'El adaptador de imagen especificado no puede ser utilizado por: '."
+"The file ""' . . '"" does not exist","El archivo ""' .. '"" no existe"
 "The class for ""%1"" type wasn't declared. Enter the class and try again.","La clase para el tipo ""%1"" no fue declarada. Introduzca la clase y vuelve a intentarlo."
 "The ""%1"" email address is incorrect. Verify the email address and try again.","La dirección de correo electrónico ""%1"" es incorrecta. Verificar la dirección de correo electrónico y vuelva a intentarlo."
 "The time zone is incorrect. Verify the time zone and try again.","La zona horaria es incorrecta. Verifica la zona horario e inténtelo de nuevo."
@@ -3671,6 +3681,7 @@ Select,Seleccionar
 save,guardar
 "Configurable Product Image","Imagen de producto configurable"
 "As low as: ","Tan bajo como: "
+"catalogProductMediaConfig is already set","catalogProductMediaConfig ya está configurado"
 "Could not update option with id ""%1""","No se pudo actualizar la opción con id ""%1"""
 "Product already has this option","El producto ya tiene esta opción"
 "The configurable product does not have any variation attribute.","El producto configurable no tiene ningún atributo modificable."
@@ -3737,7 +3748,7 @@ save,guardar
 "Cookie Restriction Mode","Modo restrictivo de la cookie"
 "<strong style=""color:red"">Warning</strong>:  Do not set to ""No"". User security could be compromised.","<strong style=""color:red"">Advertencia</strong>:  No establecer ""No"". La seguridad del usuario puede verse comprometida."
 "'Invalid domain name: ' .","'Nombre de dominio inválido: ' ."
-"'Invalid cookie lifetime: ' .","«Tiempo de vida de cookie inválido: »."
+"'Invalid cookie lifetime: ' .","'Tiempo de vida de cookie inválido: '."
 "We can't save the cron expression.","No podemos guardar la expresión cron."
 Daily,Diario
 Weekly,Semanal
@@ -4297,6 +4308,7 @@ Street,Calle
 "Additional addresses","Direcciones adicionales"
 State,"Comunidad Autónoma"
 "Reset password","Restablecer contraseña"
+"Invalidate tokens","Invalidar tokens"
 "Update Address","Actualizar dirección"
 "Name Prefix",Tratamiento
 "Name Suffix","Sufijo del nombre"
@@ -4435,17 +4447,23 @@ available,disponible
 "A row with this email, website, and finance website combination already exists.","Una fila con esta combinación de correo electrónico, sitio web y página web de finanzas ya existe."
 "Data was imported by %1","Los datos fueron importados por %1"
 "Reward Points","Puntos de recompensa"
+"Current customer does not have access to the resource ""%1""","El cliente actual no tiene acceso al recurso ""%1"""
+"Customer id %1 does not exist.","El Id de cliente %1 no existe."
 "Required parameters are missing: %1","Faltan parámetros requeridos: %1"
 "Customer Address %1 is set as default billing address and can not be deleted","La dirección del cliente %1 se establece como dirección de facturación predeterminada y no puede ser eliminada"
 "Customer Address %1 is set as default shipping address and can not be deleted","La dirección del cliente %1 se establece como dirección de envío predeterminada y no puede ser eliminada"
+"Could not find a address with ID ""%address_id""","No se pudo encontrar una dirección con ID ""%address_id"""
+"Current customer does not have permission to address with ID ""%address_id""","El cliente actual no tiene permiso para la dirección ID ""%address_id"""
 "The current customer isn't authorized.","El cliente actual no está autorizado."
 "Customer with id ""%customer_id"" does not exist.","El cliente con id ""%customer_id"" no existe."
 "Provide the current ""password"" to change ""email"".","Proporcione la ""contraseña"" actual para cambiar ""correo electrónico""."
 "Specify the ""currentPassword"" value.","Especifique el valor de ""currentPassword""."
 "Specify the ""newPassword"" value.","Especifique el valor de ""newPassword""."
 """input"" value should be specified","Se debe especificar el valor de ""input"""
+"Address ""id"" value should be specified","Se debe especificar el valor ""id"" de la dirección"
 "Specify the ""email"" value.","Especifique el valor de ""email""."
 "Specify the ""password"" value.","Especifique el valor de ""contraseña""."
+"""Email should be specified","""El correo electrónico debe especificarse"
 "Please specify a website.","Por favor especifique un sitio Web."
 "Please specify an email.","Por favor especifique un correo electrónico."
 "We found an invalid value in a website column.","Encontramos un valor inválido en una columna de sitio Web."
@@ -4614,6 +4632,12 @@ Decision,Decisión
 "Access Key","Tecla de acceso"
 "Secret Key","Clave secreta"
 "Webhook URL","URL Webhook"
+"Webhook URL should be set in your Cybersource account as Transaction Response Page.","La URL del Webhook debe ser establecida en su cuenta Cybersource como Página de Respuesta a Transacción."
+"Is admin panel works on the different domain?","¿Funciona el panel de administración en el dominio diferente?"
+"Admin Profile ID","Identificador de Perfil de Administrador"
+"Admin Access Key","Clave de Acceso de Admin"
+"Admin Secret Key","Clave Secreta de Admin"
+"Admin Webhook URL","URL de Webhook Admin"
 "The credit card type field needs to be provided. Select the field and try again.","El tipo de tarjeta de crédito debe ser proporcionado. Seleccione el campo y vuelva a intentarlo."
 "Import failed: %1","Error de importación: %1"
 "%1 does not implement %2","%1 no implementa %2"
@@ -4661,6 +4685,7 @@ inch,pulgada
 Height,Altura
 Depth,Anchura
 Width,Ancho
+Regular,Normal
 Specific,Específico
 "Easy shop","Compra fácil"
 "Express easy","Envío urgente fácil"
@@ -4671,12 +4696,14 @@ Specific,Específico
 "Express 10:30","Envío urgente hasta las 10:30 horas"
 "Domestic economy select","Selección de economía doméstica"
 "Economy select","Selección de economía"
+"Domestic express 9:00","Envío urgente doméstico 9:00"
 "Domestic express","Envío urgente doméstico"
 Others,Otros
 "Globalmail business","Negocio de correo global"
 "Same day","El mismo día"
 "Express 12:00","Envío urgente hasta las 12:00 horas"
 "Express envelope","Envío urgente sobre"
+"Domestic express 12:00","Envío urgente doméstico 12:00"
 "Freight worldwide","Transporte internacional"
 "Jumbo box","Buzón Jumbo"
 "DHL service is not available at %s date","DHL servicio no está disponible en %s fecha"
@@ -4725,6 +4752,9 @@ Size,Tamaño
 "Ready time","Tiempo preparación"
 "Package ready time after order submission (in hours)","Tiempo de preparación del paquete desde la solicitud del pedido (en horas)"
 "The security validation of the XML document has failed.","La validación de seguridad del documento XML ha fallado."
+"Content Type (Non Domestic)","Tipo de contenido (No interno)"
+"Documents Allowed Methods","Métodos permitidos para documentos"
+"Non Documents Allowed Methods","Métodos permitidos para no documentos"
 "Requested country is not available.","El país solicitado no está disponible."
 "Undefined rate from ""%1-%2"".","Tarifa indefinida de ""%1-%2""."
 "Please correct the target currency.","Por favor corrija la moneda de destino."
@@ -4756,6 +4786,7 @@ Service,Servicio
 "State Options","Opciones de estado"
 "State is Required for","Estado es necesario para"
 "Allow to Choose State if It is Optional for Country","Permiten elegir estado si es opcional para el país"
+"Base currency is used for all online payment transactions. If you have more than one store view, the base currency scope is defined by the catalog price scope (""Catalog"" > ""Price"" > ""Catalog Price Scope"").","La moneda base se utiliza para todas las transacciones de pago en línea. Si tiene más de una vista de la tienda, el alcance de la moneda base se define por el alcance del precio de catálogo (""Catalog"" > ""Price"" > ""Catalog Price Scope"")."
 "No API Key was specified or an invalid API Key was specified.","No se especificó una clave de API o se especificó una clave de API no válida."
 "The account this API request is coming from is inactive.","La cuenta de la que proviene esta solicitud de API está inactiva."
 "The ""%1"" is not allowed as base currency for your subscription plan.","El ""%1"""" no está permitido como moneda base para su plan de suscripción."
@@ -4947,6 +4978,7 @@ hello,hola
 "EAV types and attributes","Atributos y tipos EAV"
 "Entity types declaration cache","Caché de declaración de tipos de entidad"
 "Entity types declaration cache.","Caché de declaración de tipos de entidad."
+"'Invalid backend model specified: ' .","'Modelo de backend especificado inválido: ' ."
 "The attribute group doesn't belong to the provided attribute set.","El grupo de atributos no pertenece al conjunto de atributos proporcionado."
 "The attributeGroup can't be saved.","No se puede guardar attributeGroup."
 "The attribute group with id ""%1"" can't be deleted.","El grupo de atributos con id ""%1"" no se puede eliminar."
@@ -4997,6 +5029,7 @@ hello,hola
 """Attribute code should be specified","""El código del atributo debe ser especificado"
 "Attribute code %1 of entity type %2 not configured to have a type.","El código de atributo %1 del tipo de entidad %2 no está configurado para tener un tipo."
 "Missing %1 for the input %2.","Falta %1 para la entrada %2."
+"Type %1 has no internal representation declared.","El tipo %1 no tiene una representación interna declarada."
 "Cannot resolve EAV type","No se puede resolver el tipo de EAV"
 "The search failed because of a search engine misconfiguration.","La búsqueda falló debido a un error de configuración del motor de búsqueda."
 "There is no such data mapper ""%1"" for interface %2","No existe ese data mapper ""%1"" para la interface %2"
@@ -5008,6 +5041,7 @@ hello,hola
 "Enable Elasticsearch HTTP Auth","Habilitar Elasticsearch HTTP Auth"
 "Elasticsearch HTTP Username","Nombre de usuario de Elasticsearch HTTP"
 "Elasticsearch HTTP Password","Contraseña Elasticsearch HTTP"
+"Elasticsearch Server Timeout","Tiempo de espera del servidor Elasticsearch"
 "Test Connection","Probar conexión"
 "We were unable to perform the search because of a search engine misconfiguration.","No hemos podido realizar la búsqueda debido a un error de configuración del motor de búsqueda."
 "Add New Template","Agregar nueva plantilla"
@@ -5117,7 +5151,11 @@ Emails,"Mensajes de correo electrónico"
 "Wrong response type","Tipo de respuesta equivocada"
 "Connection Type","Tipo de conexión"
 "Sandbox Mode","Modo de prueba"
+"Live API Password","Contraseña Live API"
+"Live Client-side Encryption Key","Llave de cifrado en el lado del cliente en vivo"
 "Sandbox API Key","Clave de API de Sandbox"
+"Sandbox API Password","Contraseña de Sandbox API"
+"Sandbox Client-side Encryption Key","Clave de cifrado de lado cliente de Sandbox"
 "Transaction has been declined, please, try again later.","La operación ha sido rechazada. Por favor, inténtalo más tarde."
 "Switch/Solo/Maestro Only","Únicamente Switch/Solo/Maestro"
 "Issue Number","Número de emisión"
@@ -5168,6 +5206,7 @@ status,estado
 "Meter Number","Número de contador"
 Key,Clave
 "Web-Services URL (Production)","Web-Services URL (Producción)"
+"Web-Services URL (Sandbox)","URL de Servicios Web (Sandbox)"
 "Packages Request Type","Tipo de solicitud de paquetes"
 Packaging,Embalaje
 Dropoff,"De entrega"
@@ -5175,6 +5214,7 @@ Dropoff,"De entrega"
 "Residential Delivery","Entrega residencial"
 "Hub ID","ID de hub"
 "The field is applicable if the Smart Post method is selected.","El campo es aplicable si se selecciona el método de publicación inteligente."
+"Expected Delivery:","Entrega esperada:"
 "Gift Card Information","Información de la tarjeta de regalo"
 Physical,Físico
 Combined,Combinado
@@ -5341,6 +5381,7 @@ Generate,Generar
 "Dash Every X Characters","Guión cada ""X"" caracteres"
 "if empty no separation","si está vacío no hay separación"
 "New Pool Size","Nuevo tamaño de Pool"
+"Low Code Pool Threshold","Umbral de código de bajo nivel"
 "IMPORTANT: Be sure to save your configuration before running generation process.","IMPORTANTE: Asegúrese de guardar su configuración antes de ejecutar el proceso de generación."
 "Are you sure you want to delete these gift card accounts?","¿Está seguro que desea eliminar estas cuentas de tarjeta de regalo?"
 "Invalid Request","Solicitud no válida"
@@ -5842,9 +5883,19 @@ User,Usuario
 "Empty attribute value constant","Valor constante de atributo vacío"
 "Incorrect entity name.","Nombre de entidad incorrecto."
 "-- Not Selected --","- No seleccionado -"
+"Validation Strategy","Estrategia de validación"
+"Message is added to queue, wait to get your file soon","El mensaje ha sido añadido a la cola, espere para obtener su archivo pronto"
+"Please provide export file name","Por favor, proporcione nombre de archivo de exportación"
+"There are no export file with such name %1","No hay ningún archivo de exportación con el nombre %1"
+"Your export file is ready","Tu archivo de exportación está listo"
+"You can pick up your file at export main page","Puede recoger su archivo en la página principal de exportación"
+"Error during export process occurred","Ocurrió un error durante el proceso de exportación"
+"Error during export process occurred. Please check logs for detail","Ocurrió un error durante el proceso de exportación. Por favor, compruebe los registros para más detalles"
 "New product data is added to the existing product data for the existing entries in the database. All fields except sku can be updated.","Los nuevos datos del producto se agregan a los datos del producto existentes para las entradas existentes en la base de datos. Todos los campos excepto sku pueden ser actualizados."
 "The existing product data is replaced with new data. <b>Exercise caution when replacing data because the existing product data will be completely cleared and all references in the system will be lost.</b>","Los datos de producto existentes se reemplazan con nuevos datos. <b>Aviso de ejercicio al reemplazar datos porque los datos del producto existentes serán completamente borrados y se perderán todas las referencias en el sistema.</b>"
 "Any entities in the import data that already exist in the database are deleted from the database.","Cualquier entidad en los datos de importación que ya existen en la base de datos se borra de la base de datos."
+"Are you sure you wan't to delete a file?","¿Está seguro de que no desea eliminar un archivo?"
+"File name","Nombre de archivo"
 "Indexer Management","Administrar Indexer"
 "Update by Schedule","Actualizar por agenda"
 "Update on Save","Actualizar al guardar"
@@ -5897,6 +5948,7 @@ Integrations,Integraciones
 "Consumer Key","Clave del consumidor"
 "Consumer Secret","Secreto de consumidor"
 "Access Token","Token de acceso de"
+"Access Token Secret","Secreto de Token de Acceso"
 "Uninstall the extension to remove this integration","Desinstalar la extensión para eliminar esta integración"
 Activate,Activar
 Reauthorize,Reautorizar
@@ -6299,6 +6351,7 @@ Synchronizing...,Sincronización...
 "Display Actual Price","Mostrar precio actual"
 "Default Popup Text Message","Mensaje popup (predeterminado)"
 "Default ""What's This"" Text Message","""¿Qué es esto?"" mensaje (predeterminado)"
+"<strong style=""color:red"">Warning!</strong> Enabling MAP by default will hide all product prices on Storefront.","<strong style=""color:red"">¡Advertencia!</strong> Al aplicar MAP de manera predeterminada, se ocultan todos los precios de los productos en la interfaz."
 Wishlist,"Lista de deseos"
 "Customer's Wish List Report","Informe de lista de deseos del cliente"
 "My Wish Lists","Mis listas de favoritos"
@@ -6379,6 +6432,7 @@ Wishlist,"Lista de deseos"
 "Product Info","Información del producto"
 "Could not create a wish list.","No se pudo crear una lista de deseos."
 "The default wish list can't be deleted.","La lista de deseos predeterminada no se puede eliminar."
+"Edit wish list","Editar lista de deseos"
 "Ship to Multiple Addresses","Envíos a múltiples direcciones"
 "Billing Information - %1","Información de facturación - %1"
 "Review Order - %1","Revisar pedido - %1"
@@ -6572,6 +6626,7 @@ Quote,Pedido
 "Cannot create a B2B quote.","No se puede crear el pedido B2B."
 "Changes to the negotiated quote were not saved. Please try again.","No se ha guardado la negociación. Por favor, inténtelo de nuevo."
 "Cannot delete negotiable quote","No se puede eliminar el pedido negociable"
+"Shipping method cannot be set for a virtual quote.","El método de envío no puede ser establecido para una pressupuesto virtual."
 "Cannot add the shipping method. You must add a shipping address into the quote first.","No se puede añadir el método de envío. Debes añadir una dirección de envío primero."
 "Requested shipping method is not found. Row ID: ShippingMethodID = %ShippingMethodID.","El método de envío solicitado no se ha encontrado. Row ID: ShippingMethodID = %ShippingMethodID."
 "Product with SKU %1 not found","El producto con SKU %1 no se encuentra"
@@ -6785,6 +6840,7 @@ Ahora puede seleccionar la fecha de caducidad que desee."
 "Quote Total (Negotiated)","Presupuesto Total (negociado)"
 "Quote Name","Nombre del presupuesto"
 "Quote Total","Total presupuesto"
+"Exception occurred during quote view %s","Excepción ocurrida durante la visualización del presupuesto %s"
 "No such public catalog entity","No existe tal entidad de catálogo público"
 "Shared Catalog (or Customer Group)","Catálogo compartido (o grupo de clientes)"
 "No New Relic Application ID configured, cannot continue with Cron Event reporting","No esta configurada la nueva ID de aplicación Relic, no se puede continuar con el reporte de Eventos Cron"
@@ -7605,17 +7661,47 @@ Vendor,Vendedor
                             de crédito PayPal&#174;. Sus clientes tienen más tiempo para pagar, mientras tu cobras por adelantado – sin costo adicional para usted.
                            El banners de uso gratuito PayPal que anuncian crédito PayPal&#174; financiación como opción de pago cuando sus clientes pagan con PayPal.
                             El programa de publicidad de PayPal ha demostrado generar compras adicionales así como un aumento en la compra media del consumidor hasta un 15%. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">ver detalles</a>."
+"<a href=""https://financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
+                                <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
+                                from PayPal Credit&#174;. Your customers have more time to pay, while you get paid up front – at no additional cost to you.
+                                Use PayPal’s free banner ads that let you advertise PayPal Credit&#174; financing as a payment option when your customers check out with PayPal.
+                                The PayPal Advertising Program has been shown to generate additional purchases as well as increase consumer's average purchase sizes by 15%
+                                or more. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">See Details</a>.","<a href=""https://financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank""> ¿Por qué anunciar la financiación? </a><br/>
+                                 <strong> Dé un impulso a sus ventas cuando anuncie la financiación. </strong><br/> PayPal ayuda a convertir los buscadores en compradores con financiación
+                                 de PayPal Credit&#174;. Sus clientes tienen más tiempo para pagar, mientras que usted recibe el pago por adelantado, sin costo adicional para usted.
+                                 Use los anuncios publicitarios gratuitos de PayPal que le permiten anunciar la financiación de PayPal Credit&#174; como una opción de pago cuando sus clientes pagan con PayPal.
+                                 Se ha demostrado que el programa de publicidad de PayPal genera compras adicionales y aumenta el tamaño promedio de compra del consumidor en un 15%
+                                 o más. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank""> Consulte los detalles </a>."
 Gold,Oro
 Blue,Azul
 Silver,Plata
 Black,Negro
+Rectangle,Rectángulo
 Large,Grande
 Responsive,Responsivo
 Pay,Pagar
 "Buy Now","Comprar ahora"
 Installment,Entrega
 "PayPal Credit","Crédito PayPal"
+"PayPal Guest Checkout Credit Card Icons","Iconos de tarjeta de crédito de pago de PayPal Guest Checkout"
+"Customize Smart Buttons","Personalizar botones inteligentes"
+"Checkout Page","Página de pago"
+"Customize Button","Personalizar botón"
+"The installment feature is available only in these locales: en_MX, es_MX, en_BR, pt_BR.","La función de instalación está disponible sólo en las configuraciones regionales siguientes: es_MX, es_MX, es_BR, pt_BR."
+"Mexico Installment Period","Periodo de Instalación México"
+"Brazil Installment Period","Periodo de instalación de Brasil"
+"Select Responsive to ensure the PayPal button renders correctly on mobile devices.","Seleccione Responsive para asegurar que el botón PayPal se renderiza correctamente en dispositivos móviles."
+Shape,Forma
+"Product Pages","Páginas de producto"
+"Cart Page","Página del carrito"
+"Mini Cart","Mini carrito"
 Features,Características
+"Disable Funding Options","Desactivar opciones de financiación"
+"PayPal will automatically display each enabled funding option to eligible buyers.
+                                For example, PayPal Credit is only shown to buyers in countries where PayPal Credit is
+                                offered and the currency offered by the merchant is USD.","PayPal mostrará automáticamente cada opción de financiación habilitada a los compradores elegibles.
+                                Por ejemplo, el crédito de PayPal solo se muestra a los compradores en países donde el crédito de PayPal es
+                                ofrecido y la moneda ofrecida por el comerciante es USD."
 "Not you?","¿No es Usted?"
 "Your shopping cart has been updated with new prices.","Su carro de compras se ha actualizado con nuevos precios."
 "Welcome, %1!","¡ Bienvenido %1!"
@@ -7686,6 +7772,7 @@ Url,URL
 "Delete video","Eliminar video"
 Title:,Título:
 Uploaded:,Subido:
+Uploader:,Cargador:
 Duration:,Duración:
 "Video Error","Error video"
 "Unknown video type","Tipo de video desconocido"
@@ -7696,6 +7783,7 @@ Duration:,Duración:
 "New Video","Video nuevo"
 "Edit Video","Editar video"
 "Product Video","Vídeos del producto"
+"YouTube API Key","Clave API de YouTube"
 "Show related video","Ver video relacionado"
 "Auto restart video","Reiniciar video automáticamente"
 "Images And Videos","Imágenes y vídeos"
@@ -7788,23 +7876,44 @@ Carts,Carritos
 "Current customer does not have an active cart.","El cliente actual no tiene un carrito activo."
 "Shopping cart error: %message","Error del carrito de compras: %message"
 "Could not find a product with SKU ""%sku""","No se pudo encontrar un producto con el SKU ""%sku"""
+"Could not add the product with SKU %sku to the shopping cart: %message","No se pudo añadir el producto con SKU %sku al carrito de compras: %mensaje"
 "Missing key ""sku"" in cart item data","Falta la clave ""sku"" en los datos del artículo del carrito"
 "Missing key ""qty"" in cart item data","Falta la clave ""qty"" en los datos del artículo del carrito"
 "Could not find a cart with ID ""%masked_cart_id""","No se pudo encontrar un carrito con el ID ""%masked_cart_id"""
+"Current user does not have an active cart.","El usuario actual no tiene un carrito activo."
 "The current user cannot perform operations on cart ""%masked_cart_id""","El usuario actual no puede realizar operaciones en el carrito ""%masked_cart_id"""
+"Could not find a cart address with ID ""%cart_address_id""","No se pudo encontrar una dirección de carrito con ID ""%cart_address_id"""
+"The current user cannot use cart address with ID ""%cart_address_id""","El usuario actual no puede usar la dirección de carrito con ID ""%cart_address_id"""
+"The billing address must contain either ""customer_address_id"" or ""address"".","La dirección de facturación debe contener ""customer_address_id"" o ""dirección""."
+"The billing address cannot contain ""customer_address_id"" and ""address"" at the same time.","La dirección de facturación no puede contener ""customer_address_id"" y ""dirección"" al mismo tiempo."
+"Using the ""use_for_shipping"" option with multishipping is not possible.","No es posible usar la opción ""use_for_shipping"" con multishipping."
 "You cannot specify multiple shipping addresses.","No puede especificar múltiples direcciones de envío."
 "The shipping address must contain either ""customer_address_id"" or ""address"".","La dirección de envío debe contener ""customer_address_id"" o ""address""."
 "The shipping address cannot contain ""customer_address_id"" and ""address"" at the same time.","La dirección de envío no puede contener ""customer_address_id"" y ""address"" al mismo tiempo."
+"You cannot specify multiple shipping methods.","No puede especificar varios métodos de envío."
+"Required parameter ""cart_address_id"" is missing.","Falta el parámetro requerido ""cart_address_id""."
+"Required parameter ""carrier_code"" is missing.","Falta el parámetro requerido ""carrier_code""."
+"Required parameter ""method_code"" is missing.","Falta el parámetro requerido ""method_code""."
 "Option type ""%1"" is not supported","El tipo de opción ""%1"" no es compatible"
 "%1 doesn't implement CustomizableOptionValueInterface","%1 no implementa CustomizableOptionValueInterface"
 "Required parameter ""cart_id"" is missing","Falta el parámetro requerido ""cart_id"""
+"Required parameter ""cartItems"" is missing","Falta el parámetro requerido ""cartItems"""
 "Required parameter ""coupon_code"" is missing","Falta el parámetro requerido ""coupon_code"""
 "A coupon is already applied to the cart. Please remove it to apply another","Ya se ha aplicado un cupón al carrito. Por favor, elimínelo para aplicar otro"
 "Missing key ""product"" in cart data","Falta la clave ""product"" en los datos del carrito"
 "Missing key ""type_id"" in product data","Falta la clave ""type_id"" en los datos del producto"
 "Product ""%product_type"" type is not supported","El tipo de producto ""%product_type"" no es compatible"
+"Required parameter ""cart_id"" is missing.","Falta el parámetro requerido ""cart_id""."
+"Required parameter ""cart_item_id"" is missing.","Falta el parámetro requerido ""cart_item_id""."
+"Required parameter ""billing_address"" is missing","Falta el parámetro requerido ""billing_address"""
+"Required parameter ""payment_method"" is missing","Falta el parámetro requerido ""payment_method"""
 "Required parameter ""shipping_addresses"" is missing","Falta el parámetro requerido ""shipping_addresses"""
 "Required parameter ""shipping_methods"" is missing","Falta el parámetro requerido ""shipping_methods"""
+"""model"" values should be specified","Deben especificarse los valores ""modelo"""
+"Required parameter ""cart_items"" is missing.","Falta el parámetro requerido ""cart_items""."
+"Required parameter ""cart_item_id"" for ""cart_items"" is missing.","Falta el parámetro requerido ""cart_item_id"" para ""cart_items""."
+"Required parameter ""quantity"" for ""cart_items"" is missing.","Falta el parámetro ""quantity"" requerido para ""cart_items""."
+"Could not find cart item with id: %1.","No se pudo encontrar el artículo del carrito con id: %1."
 "It is impossible to log user action","Es imposible registrar la acción del usuario"
 "An error occurred while logging process.","Se produjo un error durante el proceso de registro."
 "Release Notification","Notificación de la versión"
@@ -8008,6 +8117,17 @@ Impulsado por Magento Business Intelligence.</p>
                         </ul>
                         "
 "Sorry, we had a problem loading our “What’s new” content.","Lo sentimos, tuvimos un problema al cargar nuestro contenido ""Novedades""."
+"
+                        <p>We’ll try to show it again the next time you sign in to Magento Admin.</p>
+                        <p>To learn more about new features, see our latest Release Notes in
+                        <a href=""http://devdocs.magento.com/magento-release-information.html""
+                        target=""_blank"">DevDocs' Release Information</a>.
+                        </p>","
+                        <p>Intentaremos mostrarlo de nuevo la próxima vez que inicie sesión en Admin Magento</p>
+                        <p>Para obtener más información sobre las nuevas funciones, consulte nuestras últimas Notas de la versión en
+                        <a href=""http://devdocs.magento.com/magento-release-information.html""
+                        target=""_blank""> DevDocs' Información de la versión</a>.
+                        </p>"
 "
                         <p>We’ll try to show it again the next time you sign in to Magento Admin.</p>
                         <p>To learn more about new features, see our latest Release Notes in
@@ -8861,6 +8981,7 @@ FALSE,FALSO
 "Unknown condition operator","Operador de condición desconocido"
 "There is no information about associated entity type ""%1"".","No hay información acerca del tipo de entidad asociada ""%1""."
 "Please specify valid %1.","Por favor especifique un válido %1."
+"is undefined","no está definido"
 "Credit Memos","Facturas rectificativas"
 Invoices,Facturas
 "We can't get the order instance right now.","No se puede obtener la instancia de pedido en este momento."
@@ -9604,6 +9725,11 @@ Si selecciona y guarda la regla, podrá generar múltiples códigos de cupón.
 "Category (Children Only)","Categoría (Sólo Secundaria)"
 "(Parent Only)","(Sólo Principal)"
 "(Children Only)","(Sólo Secundaria)"
+"Message is added to queue, wait to get your coupons soon","El mensaje ha sido añadido a la cola, espere para obtener sus cupones pronto"
+"Your coupons are ready","Tus cupones están listos"
+"You can check your coupons at sales rule page","Puede comprobar sus cupones en la página de reglas de venta"
+"Error during coupons generator process occurred","Ocurrió un error durante el proceso generador de cupones"
+"Error during coupons generator process occurred. Please check logs for detail","Ocurrió un error durante el proceso generador de cupones. Por favor, compruebe los registros para más detalles"
 "An error occurred during processing; coupon with id %1 expiration date wasn't updated. The error message was: %2","Ocurrió un error durante el procesamiento; no se actualizó la fecha de vencimiento del cupón con id %1. El mensaje de error fue: %2"
 "The cart price rule will be removed from the update and all scheduled changes will be lost.","La regla de precio del carrito de compras se eliminará de la actualización y todos los cambios programados se perderán."
 "Remove Cart Price Rule from Campaign","spanish translate"
@@ -10104,6 +10230,7 @@ Yearly,Anual
 "Solr Server Port","Puerto de servidor Solr"
 "Solr Server Username","Nombre de usuario de servidor Solr"
 "Solr Server Password","Contraseña del servidor de Solr"
+"Solr Server Timeout","Tiempo de espera del servidor Solr"
 "Solr Server Path","Ruta del servidor de Solr"
 "Without starting and trailing slashes.","Sin barras diagonales al inicio o al final."
 "Indexation Mode","Modo de indexación"
@@ -10161,6 +10288,7 @@ Includes,Incluye
 "Assign to Existing Campaign","Asignar a la campaña existente"
 "Create New Campaign","Crear nueva campaña"
 "Campaign/Promo Name","Nombre de campaña/promoción"
+"MMM d, y h:mm a","d 'de' MMM 'de' yyyy, H:mm"
 "The Future Update Start Time is invalid. It can't be later than current time + %1 years.","La hora de inicio de la actualización futura no es válida. No puede ser anterior a la hora actual + %1 years."
 "The Future Update End Time is invalid. It can't be later than current time + %1 years.","La hora de inicio de la actualización futura no es válida. No puede ser más tarde que la hora actual + %1 years."
 "The required parameter is ""%1"". Set parameter and try again.","El parámetro requerido es ""%1"". Establezca el parámetro y vuelva a intentarlo."
@@ -10323,6 +10451,7 @@ Model,Modelo
 "Executed At","Ejecutado en"
 "Finished At","Terminado en"
 "Core Configurable Cron Jobs","Cron Jobs Core Configurables"
+"Core Global Cron Jobs","Trabajos de Cron Global Core"
 "Cron Schedules by job code","Programación cron por código de trabajo"
 Count,Cuenta
 "Cron Schedules by status code","Horarios de cron por código de estado"
@@ -10443,6 +10572,9 @@ Swatches,Muestras
 "Manage Swatch (values of your attribute)","Gestionar Swatch (valores de atributo)"
 "Swatch cannot be saved","Swatch no se puede guardar"
 More,Más
+"Sending swatch values as package.","Enviando valores de muestra como paquete."
+"Addtional data is wrong and cannot be assembled","Datos adicionales son erróneos y no se pueden ensamblar"
+"Addtional data is wrong and cannot be populated","Datos adicionales son erróneos y no se pueden ensamblar"
 "Related Products Rule","Regla de artículos relacionados"
 "Product Result Conditions (leave blank for matching all products)","Condiciones de resultado de productos (dejar en blanco para coincidir todos los productos)"
 "Products to Display","Productos para mostrar"
@@ -10732,6 +10864,7 @@ Scope:,Alcance:
 "%1 Item(s)","%1 artículos"
 Page,Página
 "You're currently reading page","Estás leyendo la página"
+WK,semana
 "We don't recognize this file extension.","No reconocemos esta extensión de archivo."
 "1 column","1 columna"
 "Default welcome msg!","¡Mensaje de bienvenida! (predeterminada)!"
@@ -10788,6 +10921,7 @@ Account,Cuenta
 "Allowed file types: png, gif, jpg, jpeg, svg.","Permite tipos de archivo: png, gif, jpg, jpeg, svg."
 "Copyright © 2016 Magento. All rights reserved.","Copyright © 2016 Magento. Todos los derechos reservados."
 "Display Report Bugs Link","Mostrar Informe de bugs"
+"Allowed file types: ICO, PNG, GIF, JPG, JPEG, APNG. Not all browsers support all these formats!","Tipos de archivos permitidos: ICO, PNG, GIF, JPG, JPEG, APNG. ¡No todos los navegadores soportan todos estos formatos!"
 "The scope or scope ID is invalid. Verify both and try again.","El ID de ámbito o el ámbito no es válido. Verifica ambos e intenta de nuevo."
 "The backend model isn't specified for ""%1"".","El modelo de backend no está especificado para ""%1""."
 "The ""%templateName"" template contains an incorrect configuration, with a reference to itself. Remove or change the reference, then try again.","La plantilla ""%templateName"" contiene una configuración incorrecta, con una referencia a sí misma. Elimine o cambie la referencia, luego pruebe de nuevo."
@@ -10932,7 +11066,14 @@ formElements/*[name(.)=../../@formElement]/settings/caption
 formElements/*[name(.)=../../@formElement]/settings/title
                     "
 "Initialization error component, check the spelling of the name or the correctness of the call.","Componente de error de inicialización, Compruebe la ortografía del nombre o la corrección de la convocatoria."
+"Save View As...","Guardar vista como..."
 Columns,Columnas
+"All in column","Todo en columna"
+"Record contains unsaved changes.","El registro contiene cambios no guardados."
+"Active filters:","Filtros activos:"
+"Clear all","Limpiar todo"
+"Advanced filter","Filtro avanzado"
+"Apply Filters","Aplicar Filtros"
 "Please enter 6 or more characters. Leading or trailing spaces will be ignored.","Por favor, introduzca 6 o más caracteres. Los espacios entre caracteres serán ignorados."
 ui/grid/filters/elements/select,ui/cuadrícula/filtros/elementos/seleccionar
 "Please enter a quantity greater than 0.","Por favor ingrese una cantidad mayor que 0."
@@ -10940,6 +11081,10 @@ ui/grid/filters/elements/select,ui/cuadrícula/filtros/elementos/seleccionar
 "First character must be letter.","El primer carácter debe ser una letra."
 "If enabled, can be used by functional tests for extended reporting","Si está habilitado, puede ser utilizado por pruebas funcionales para reportes ampliados"
 "Use this key to retrieve collected js errors","Utilice esta tecla para recuperar errores recogidos js"
+"The configuration parameter ""formElement"" is a required for ""' . . '"" field.","El parámetro de configuración ""formElement"" es necesario para el campo ""' . . '""."
+"'Remove ' .","'Eliminar ' ."
+"'Add New ' .","'Añadir nuevo ' ."
+"'New ' .","'Nuevo ' ."
 "The file upload field is disabled.","El campo de subida de archivos está deshabilitado."
 "No marginal white space please","Sin espacio en blanco por favor"
 "Please enter a valid percentage discount value greater than 0.","Por favor, introduzca un valor de descuento porcentual válido mayor que 0."
@@ -10958,6 +11103,7 @@ ui/grid/filters/elements/select,ui/cuadrícula/filtros/elementos/seleccionar
 "Open in new tab","Abrir en una pestaña nueva"
 "Wrong color format. Please specify color in HEX, RGBa, HSVa, HSLa or use color name.","Formato de color incorrecto. Especifique el color en HEX, RGBa, HSVa, HSLa o use el nombre del color."
 "This link is not allowed.","Este enlace no está permitido."
+"This element contains invalid data. Please resolve this before saving.","Este elemento contiene datos no válidos. Por favor, resuelva esto antes de guardar."
 "Please use only lowercase letters (a-z), numbers (0-9) or underscore (_) in this field, and the first character should be a letter.","Use solo letras minúsculas (a-z), números (0-9) o guión bajo (_) en este campo, y el primer carácter debe ser una letra."
 "UPS Next Day Air","UPS Aéreo Entrega al día siguiente"
 "UPS Second Day Air","UPS Aéreo Entrega al final del segundo día laboral"
@@ -11184,10 +11330,12 @@ Failures,Fallos
 "Priority Mail Express Flat Rate Envelope","Priority Mail Express Flat Rate sobre"
 "First-Class Mail Large Postcards","First-Class Mail Postal grande"
 "Priority Mail Flat Rate Envelope","Priority Mail Flat Rate sobre"
+"Priority Mail Medium Flat Rate Box","Tarifa plana para Caja Mediana en Correo Prioritario"
 "Priority Mail Large Flat Rate Box","Tarifa plana grande de prioridad caja"
 "Priority Mail Express Sunday/Holiday Delivery","Priority Mail Express entrega Domingo o durante las vacaciones"
 "Priority Mail Express Sunday/Holiday Delivery Flat Rate Envelope","Priority Mail Express Sunday/Holiday Delivery Flat Rate sobre"
 "Priority Mail Express Flat Rate Envelope Hold For Pickup","Priority Mail Express Flat Rate sobre recolección"
+"Priority Mail Small Flat Rate Box","Tarifa plana para Caja Pequeña en Correo Prioritario"
 "Priority Mail Padded Flat Rate Envelope","Priority Mail Padded Flat Rate sobre"
 "Priority Mail Express Legal Flat Rate Envelope","Priority Mail Express Legal Flat Rate sobre"
 "Priority Mail Express Legal Flat Rate Envelope Hold For Pickup","Priority Mail Express Legal Flat Rate sobre recolección"
@@ -11218,8 +11366,16 @@ Failures,Fallos
 "Priority Mail Express Padded Flat Rate Envelope","Prioridad del correo urgente acolchado con sobre de tarifa única"
 "Priority Mail Express Padded Flat Rate Envelope Hold For Pickup","Priority Mail Express Padded Flat Rate Envelope Hold For Pickup Retención para recolección"
 "Priority Mail Express Sunday/Holiday Delivery Padded Flat Rate Envelope","Priority Mail Express Sunday/Holiday Entrega del sobre acolchado de la tarifa única"
+"Priority Mail Express International","Correo Prioritario Exprés Internacional"
+"Priority Mail International","Correo Prioritario Internacional"
+"Global Express Guaranteed (GXG)","Global Express Garantizado (GXG)"
+"Global Express Guaranteed Document","Documento Global Express Garantizado"
+"Global Express Guaranteed Non-Document Rectangular","Global Express Garantizado No-Documento Rectangular"
+"Global Express Guaranteed Non-Document Non-Rectangular","Global Express Garantizado No-Documento No-Rectangular"
 "Priority Mail International Flat Rate Envelope","Priority Mail International Flat Rate sobre"
+"Priority Mail International Medium Flat Rate Box","Tarifa plana internacional para Caja Mediana en Correo Prioritario"
 "Priority Mail Express International Flat Rate Envelope","Priority Mail Express International Flat Rate sobre"
+"Priority Mail International Large Flat Rate Box","Tarifa plana internacional para Caja Grande en Correo Prioritario"
 "USPS GXG Envelopes","USPS GXG Sobres"
 "First-Class Mail International Letter","Carta de primera clase internacional del correo"
 "First-Class Mail International Large Envelope","Sobre grande correo de primera clase internacional"
@@ -11255,6 +11411,10 @@ Gift,Regalo
 Machinable,Manufacturable
 "First-Class Mail Parcel","Paquete de correo de primera clase"
 "Flat-Rate Box","Caja de tarifa plana"
+"Standard Post","Envío estándar"
+"Priority Mail Express Flat Rate Boxes","Tarifa plana para Cajas en Correo Prioritario"
+"Priority Mail Express Flat Rate Boxes Hold For Pickup","Tarifa plana para Cajas en Correo Prioritario de servicio Espera para la Recogida"
+"Priority Mail Express International Flat Rate Boxes","Tarifa plana internacional para Cajas en Correo Prioritario"
 "Add New Variable","Agregar nueva Variable"
 "Custom Variable ""%1""","Variable personalizada ""%1"""
 "New Custom Variable","Nueva variable personalizada"
@@ -11280,6 +11440,8 @@ Machinable,Manufacturable
 "No payment tokens are available for the specified order payment.","No hay fichas de pago disponibles para el pago del pedido especificado."
 "Credit Card was successfully removed","La tarjeta de crédito fue removida con éxito"
 "You have no credit cards.","No tienes tarjetas de crédito."
+"Specify the ""public_hash"" value.","Especifique el valor ""public_hash""."
+"Could not find a token using public hash: %1","No se pudo encontrar un token usando hash público: %1"
 "Delete Current Hierarchy","Eliminar la jerarquía actual"
 "Pages Hierarchy","Jerarquía de páginas"
 "Page Properties","Propiedades de la página"
@@ -11292,6 +11454,7 @@ Chapter/Section,Capítulo/Sección
 "Defines this node as Chapter/Section","Este nodo se define como sección de capítulo"
 "Pagination Options for Nested Pages","Opciones de paginación de páginas anidadas"
 "Enable Pagination","Habilitar paginación"
+Frame,Marco
 "Set the number of links to display at one time.","Establecer el número de enlaces a mostrar a la vez."
 "Frame Skip","Salto de frame"
 "If the Current Frame Position does not cover Utmost Pages, will render Link to Current Position plus/minus this Value","Si la posición actual del frame no cubre la mayoría de las páginas, se procesará un enlace a la posición actual más/menos este valor"
@@ -11484,6 +11647,7 @@ Logic,Lógica
 "Match products by rule","Coincidir productos por regla"
 "Save and Close","Guardar y Cerrar"
 "Visual Merchandiser Options","Opciones de Visual Merchandiser"
+"Visual Merchandiser","Vendedor Visual"
 "Visible Attributes for Category Rules","Atributos visibles para las reglas de la categoría"
 "Additional attributes usable in category rules","Atributos adicionales útiles en reglas de categoría"
 "Minimum Stock Threshold","Umbral mínimo de Stock"
@@ -11494,6 +11658,7 @@ Logic,Lógica
 Sort,Ordenar
 "Automatic Sorting","Ordenación automática"
 "Sort order","Orden de organización"
+"Wait loading...","Esperando carga..."
 "Rule %1 does not exists","La regla %1 no existe"
 "Consumer is not authorized to access %resources","Spanish translate"
 "Operation allowed only in HTTPS","spanish translate"
@@ -11508,6 +11673,7 @@ Sort,Ordenar
 "Soap fault reason.","Motivo de la falla SOAP."
 "Create Customer","Registrar cliente"
 "Get Customer","spanish translate"
+"Magento Web API","API web de Magento"
 "SOAP Settings","Ajustes SOAP"
 "Default Response Charset","Conjunto de caracteres de respuesta (predeterminado)"
 "If empty, UTF-8 will be used.","Si está vacío, se utilizará UTF-8."
@@ -11757,4 +11923,6 @@ Translate,Traducir
 "Maximum length of this field must be equal or less than %1 symbols.","Longitud máxima de este campo debe ser igual o inferior a %1 símbolos."
 "Admin is a required field in the each row.","Admin es un campo obligatorio en cada fila."
 "Forbidden extensions has been used. Avoid usage of ","Se han utilizado extensiones prohibidas. Evitar el uso de "
+"Enter valid SKU key","Introduzca clave SKU válida"
+"Swatch and Admin are the required fields in the each row.","Swatch y Admin son los campos requeridos en cada fila."
 "The widget %1 is no longer available. Select a different widget.","El widget %1 ya no está disponible. Seleccione un widget diferente."
